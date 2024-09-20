@@ -10,7 +10,7 @@ function SignUp() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3001/signup', {
+      const response = await fetch('react-app-backend-chi.vercel.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -23,6 +23,7 @@ function SignUp() {
       alert('user created successfully');
     } catch (error) {
       console.error('Error:', error);
+      alert("failed to create user due to network failure or website is down");
     }
   };
 
