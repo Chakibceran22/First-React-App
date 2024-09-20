@@ -10,7 +10,7 @@ function SignUp() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3001/signup', {
+      const response = await fetch('react-app-backend-chi.vercel.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
