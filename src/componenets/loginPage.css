@@ -1,0 +1,159 @@
+html {
+  margin: 0;
+  /* Remove default margins */
+  padding: 0;
+  /* Remove default padding */
+  height: 100%;
+  /* Ensure html and body take up the full viewport height */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 0px rgba(66, 66, 78, 0.8);
+  padding: 30px 20px;
+  background-color: rgba(239, 239, 244, 0.1);
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+
+
+}
+
+.submit-button {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 25px;
+  color: rgba(240, 240, 240);
+  border-radius: 25px;
+  padding: 15px 40px;
+  cursor: pointer;
+  text-decoration-line: none;
+  font: bold 20px Arial, sans-serif;
+  background: linear-gradient(45deg, rgba(142, 47, 189, 1), rgba(92, 30, 124, 1)); /* Original colors */
+  background-size: 300% 300%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 60px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.submit-button:hover {
+  animation: gradient-animation 1s ease infinite; /* Faster animation */
+  box-shadow: 0 4px 20px rgba(142, 47, 189, 0.6); 
+}
+
+.submit-button:active {
+  background-color: rgb(189, 130, 219);
+}
+
+.form-input {
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  border: solid 1px black;
+  background-color: rgba(240, 240, 240);
+  ;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.login-sep {
+  display: flex;
+  justify-content: center;
+  padding: 10px 130px;
+  margin: 5px 5px 10px 5px;
+  text-align: center;
+  border-radius: 30px;
+  color: rgba(240, 240, 240);
+  text-align: center;
+  background: linear-gradient(45deg, rgba(142, 47, 189, 1), rgba(92, 30, 124, 1)); /* Original colors */
+  background-size: 300% 300%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  font-family: Arial, sans-serif;
+}
+
+.login-sep:hover {
+  animation: gradient-animation 1s ease infinite; /* Faster animation */
+  box-shadow: 0 4px 20px rgba(142, 47, 189, 0.6);
+}
+
+.text-font {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+  color: rgba(240, 240, 240);
+  text-align: center;
+  padding: 5px 25px 5px 5px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.username-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.password-font {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+  color: rgba(240, 240, 240);
+  text-align: center;
+  padding: 5px 26px 5px 5px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background-image: url(resources/Fluid_background_2019_3-1-34.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lower-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 0px 0px;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
