@@ -1,0 +1,124 @@
+body{
+    background-image: url(resources/Fluid_background_2019_3-1-34.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0px rgba(66, 66, 78, 0.8);
+    padding: 30px 20px;
+    background-color: rgba(239, 239, 244, 0.1);
+    border-radius: 25px;
+    backdrop-filter: blur(8px);
+    align-items: center;
+}
+.signeUp-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+.head-title{
+    padding: 10px 130px;
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+    border-radius: 30px;
+    color: rgba(240, 240, 240);
+    text-align: center;
+    background: linear-gradient(45deg, rgba(142, 47, 189, 1), rgba(92, 30, 124, 1)); /* Original colors */
+    background-size: 300% 300%;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    font-family: Arial, sans-serif;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    color: rgba(240, 240, 240);
+    text-align: center;
+    padding: 5px 25px 5px 5px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px 0px;
+}
+input{
+    padding: 8px 15px;
+    margin: 19px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: rgba(240, 240, 240);
+    font-family: Arial, sans-serif;
+}
+.text-font2{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(240, 240, 240);
+    margin: 10px 0px 10px 0px;
+    text-decoration-line: underline;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+.login-button{
+    display: inline-block;
+    text-align: center;
+    margin: 30px 10px 10px 10px;
+    color: rgba(240, 240, 240);
+    border-radius: 25px;
+    padding: 15px 40px;
+    cursor: pointer;
+    text-decoration-line: none;
+    background: linear-gradient(45deg, rgba(142, 47, 189, 1), rgba(92, 30, 124, 1)); /* Original colors */
+    background-size: 300% 300%;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+.login-button:hover{
+    animation: gradient-animation 1s ease infinite; /* Faster animation */
+    box-shadow: 0 4px 20px rgba(142, 47, 189, 0.6); 
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  
+  
+  
