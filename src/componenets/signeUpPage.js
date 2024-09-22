@@ -11,7 +11,7 @@ function SignUp() {
 
     try {
 
-      const response = await fetch(process.env.SITE_URL, {
+      const response = await fetch("https://react-app-backend-production-50be.up.railway.app/api/signeup", {
 
 
 
