@@ -10,7 +10,11 @@ function SignUp() {
     e.preventDefault();
 
     try {
-      const response = await fetch('react-app-backend-chi.vercel.app', {
+
+      const response = await fetch('https://react-app-backend-production-e480.up.railway.app/api/signeup', {
+
+
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -23,6 +27,7 @@ function SignUp() {
       alert('user created successfully');
     } catch (error) {
       console.error('Error:', error);
+      alert("failed to create user due to network failure or website is down");
     }
   };
 
