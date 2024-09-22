@@ -1,6 +1,6 @@
 import React from "react";
 import HOME from "./componenets/loginPage";
-import SIGNE from "./componenets/signeUp";
+import SIGNE from "./componenets/signeUpPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
     return (
