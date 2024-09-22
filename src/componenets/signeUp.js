@@ -10,7 +10,7 @@ function SignUp() {
     e.preventDefault();
 
     try {
-      const response = await fetch('react-app-backend-chi.vercel.app/api/signeup', {
+      const response = await fetch('https://react-app-backend-production-e480.up.railway.app/api/signeup.js', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
