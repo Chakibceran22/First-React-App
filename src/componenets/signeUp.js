@@ -10,7 +10,7 @@ function SignUp() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://react-app-backend-production-e480.up.railway.app/api', {
+      const response = await fetch('https://react-app-backend-production-e480.up.railway.app/api/signeup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
