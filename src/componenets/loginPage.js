@@ -62,7 +62,7 @@ function Login() {
             </div>
             <div className="lower-section">
                 <button className="submit-button submit-button-left" onClick={handleSubmit}>SigneUp</button>
-                <button className="submit-button submit-button-right" type="submit" >Login</button>
+                <button className="submit-button submit-button-right" type="submit" onClick={handleLogin}>Login</button>
             </div>
             </form>
         </div>
