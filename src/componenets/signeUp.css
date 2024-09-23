@@ -85,6 +85,7 @@ input{
     font-weight: bold;
 }
 .login-button{
+    border-style: none;
     display: inline-block;
     text-align: center;
     margin: 30px 10px 10px 10px;

@@ -1,7 +1,14 @@
 
 import './loginPage.css';
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 function Login() {
+    const navigate = useNavigate();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        navigate('/signeup');
+    };
+
   return (
     <div class="container">
         <div class="container2">
@@ -17,13 +24,13 @@ function Login() {
 
             </div>
             <div class="lower-section">
-                <a class="submit-button" href="/signeup">SignUp</a>
-                <a class="submit-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  >LogIn</a>
+                <button class="submit-button submit-button-left" onClick={handleSubmit}>SigneUp</button>
+                <button class="submit-button submit-button-right" type="submit">Login</button>
             </div>
             </form>
         </div>
     </div>
   );
 }
-
+// https://www.youtube.com/watch?v=dQw4w9WgXcQ
 export default Login;
