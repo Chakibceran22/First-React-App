@@ -35,7 +35,8 @@ function Login() {
         })
         .then(data => {
             if (data.success) {
-                setMessage('Login successful!'); // Success message
+                setMessage('Login successful!'); 
+                console.log(data)// Success message
             } else {
                 setMessage('Invalid credentials. Please try again.'); // Error message
             }
