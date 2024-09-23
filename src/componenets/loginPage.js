@@ -11,40 +11,33 @@ function Login() {
     };
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [message, setMessage] = useState('');
 
     // Function to handle login
-    const handleLogin = (e) => {
-        e.preventDefault(); // Prevent form submission from refreshing the page
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch("https://react-app-backend-production-3558.up.railway.app/api/login", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
 
-        fetch('https://react-app-backend-production-3558.up.railway.app/api/login', {
-            method: 'POST', // Use POST method
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                username: username,
-                password: password,
-            }),
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
+            const result = await response.json();
+            console.log('Response from server:', result);
+            if(result)
+            {
+                alert('login successfully');
             }
-            return response.json();
-        })
-        .then(data => {
-            if (data.success) {
-                setMessage('Login successful!'); 
-                console.log(data)// Success message
-            } else {
-                setMessage('Invalid credentials. Please try again.'); // Error message
+            else
+            {
+                alert('Invalid username or password');
             }
-        })
-        .catch(error => {
+        } catch (error) {
             console.error('Error:', error);
-            setMessage('An error occurred. Please try again later.');
-        });
+            alert("failed to login due to network failure or website is down");
+        }
     };
 
   return (
