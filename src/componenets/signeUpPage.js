@@ -17,7 +17,7 @@ function SignUp() {
 
     try {
 
-      const response = await fetch("https://react-app-backend-production-50be.up.railway.app/api/signeup", {
+      const response = await fetch("https://react-app-backend-production-3558.up.railway.app/api/signeup", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

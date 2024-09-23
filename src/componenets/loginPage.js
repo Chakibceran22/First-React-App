@@ -17,7 +17,7 @@ function Login() {
     const handleLogin = (e) => {
         e.preventDefault(); // Prevent form submission from refreshing the page
 
-        fetch('https://react-app-backend-production-50be.up.railway.app/api/login', {
+        fetch('https://react-app-backend-production-3558.up.railway.app/api/login', {
             method: 'POST', // Use POST method
             headers: {
                 'Content-Type': 'application/json',
