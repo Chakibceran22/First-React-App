@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import './signeUp.css';
+import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+  const handleNavigate = (e) =>{
+    e.preventDefault();
+    navigate('/');
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,9 +18,6 @@ function SignUp() {
     try {
 
       const response = await fetch("https://react-app-backend-production-50be.up.railway.app/api/signeup", {
-
-
-
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,18 +76,9 @@ function SignUp() {
             </form>
           </div>
         </div>
-        <a
-          href="#"
-          className="login-button"
-          onClick={(e) => {
-            e.preventDefault(); // Prevent the default link behavior
-            handleSubmit(e); // Call the handleSubmit directly
-          }}
-        >
-          Sign Up
-        </a>
+        <button type="submit" form="signupForm" className="login-button" onClick={handleSubmit}>SigneUp</button>
         <p className="text-font2">
-          Already have an account? <a href="/" className="login-button">Login</a>
+          Already have an account? <button className='login-button' onClick={handleNavigate}>Login</button>
         </p>
       </div>
     </div>
